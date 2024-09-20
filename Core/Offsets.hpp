@@ -1,36 +1,36 @@
 #pragma once
 #include <string>
 // https://www.unknowncheats.me/forum/apex-legends/319804-apex-legends-reversal-structs-offsets.html
- 
-std::string CheatVersion = "Version 1.1.4";
-std::string GameVersion = "v3.0.80.16"; // [Miscellaneous]->GameVersion
- 
+
+//std::string CheatVersion = "Version 1.1.4";
+//std::string GameVersion = "v3.0.80.16"; // [Miscellaneous]->GameVersion
+
 // Core
 constexpr long OFF_REGION = 0x140000000; // [Static]->Region
-constexpr long OFF_LEVEL = 0x17f66c4; // [Miscellaneous]->LevelName
-constexpr long OFF_LOCAL_PLAYER = 0x23F52B8; // [Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1f22028; // [Miscellaneous]->cl_entitylist
+constexpr long OFF_LEVEL = 0x18356c4; // [Miscellaneous]->LevelName
+constexpr long OFF_LOCAL_PLAYER = 0x24342B8; // [Miscellaneous]->LocalPlayer
+constexpr long OFF_ENTITY_LIST = 0x1F61048; // [Miscellaneous]->cl_entitylist
 constexpr long OFF_NAME_INDEX = 0x38; // NameIndex
-constexpr long OFF_NAME_LIST = 0xd3e54d0; // [Miscellaneous]->NameList
+constexpr long OFF_NAME_LIST = 0xd425fe0; // [Miscellaneous]->NameList
 constexpr long OFF_GAMEMODE = 0x0242d460; // [ConVars]->mp_gamemode
 constexpr long OFF_SQUAD_ID = 0x0344; // [RecvTable.DT_BaseEntity]->m_squadID
-constexpr long OFF_GLOBAL_VARS = 0x17f61c0; // [Miscellaneous]->GlobalVars
- 
+constexpr long OFF_GLOBAL_VARS = 0x18351C0; // [Miscellaneous]->GlobalVars
+
 // HUD
-constexpr long OFF_VIEWRENDER = 0x76a7c38; // [Miscellaneous]->ViewRender
+constexpr long OFF_VIEWRENDER = 0x76e8738; // [Miscellaneous]->ViewRender
 constexpr long OFF_VIEWMATRIX = 0x11a350; // [Miscellaneous]->ViewMatrix
- 
+
 // Buttons
-constexpr long OFF_INATTACK = 0x076a7d20; // [Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x076a7e28; // [Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x076a7f30; // [Buttons]->in_duck
-constexpr long OFF_IN_FORWARD = 0x076a7c70; // [Buttons]->in_forward
-constexpr long OFF_IN_BACKWARD = 0x076a7c98; // [Buttons]->in_backward
+constexpr long OFF_INATTACK = 0x76e8820; // [Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x76e8940; // [Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x76e8a30; // [Buttons]->in_duck
+constexpr long OFF_IN_FORWARD = 0x76e8770; // [Buttons]->in_forward
+constexpr long OFF_IN_BACKWARD = 0x76e8798; // [Buttons]->in_backward
 constexpr long OFF_TRAVERSAL_START_TIME = 0x2b70; // [RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
 constexpr long OFF_TRAVERSAL_PROGRESS = 0x2b6c; // [RecvTable.DT_LocalPlayerExclusive]->m_traversalProgress
 constexpr long OFF_WALL_RUN_START_TIME = 0x3674; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunStartTime
 constexpr long OFF_WALL_RUN_CLEAR_TIME = 0x3678; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunClearTime
- 
+
 // Player
 constexpr long OFF_HEALTH = 0x0328; // [RecvTable.DT_Player]->m_iHealth
 constexpr long OFF_MAXHEALTH = 0x0470; // [RecvTable.DT_Player]->m_iMaxHealth
@@ -59,7 +59,7 @@ constexpr long OFF_DUCK_STATUS = 0x2a60; // [DataMap.C_Player]->m_duckState
 constexpr long OFF_CENTITY_FLAGS = 0x00c8; // [DataMap.C_Player]->m_fFlags
 constexpr long OFF_GRAPPLE = 0x2cc0; // [RecvTable.DT_Player].m_grapple
 constexpr long OFF_GRAPPLE_ATTACHED = 0x2d50; // [RecvTable.DT_Player]->m_grappleActive
- 
+
 // Weapon
 constexpr long OFF_WEAPON_HANDLE = 0x1944; // [RecvTable.DT_Player]->m_latestPrimaryWeapons
 constexpr long OFF_WEAPON_INDEX = 0x1788; // [RecvTable.DT_WeaponX]->m_weaponNameIndex
@@ -74,14 +74,14 @@ constexpr long OFF_WEAPON_DISCARDED = 0x15a9; // [RecvTable.DT_WeaponX]->m_disca
 constexpr long OFF_VIEWMODELS = 0x2d98; // [RecvTable.DT_Player]->m_hViewModels
 constexpr long OFF_IN_RELOAD = 0x15aa; // [RecvTable.DT_WeaponX_LocalWeaponData]->m_bInReload
 constexpr long OFF_NEXT_READY_TIME = 0x1568; // [DataMap.CWeaponX]->m_nextReadyTime
- 
+
 // Glow
 constexpr long OFF_HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xb199720; // [Miscellaneous]->HighlightSettings
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xB1DA220; // [Miscellaneous]->HighlightSettings
 constexpr long OFF_GLOW_ENABLE = 0x27c; // ? unused
- 
+
 // Item
 constexpr long OFF_CUSTOM_SCRIPT_INT = 0x1568; // [RecvTable.DT_PropSurvival]->m_customScriptInt
